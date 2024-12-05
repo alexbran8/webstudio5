@@ -2,6 +2,7 @@
   "name": "webstudio5",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://alexbran8.github.io/webstudio5",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
