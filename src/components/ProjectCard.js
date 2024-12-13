@@ -40,7 +40,7 @@ export const ProjectCard = ({ project }) => {
                     alignItems="center"
                     marginBottom="0"
                 >
-                    <Grid xs={2}>
+                    <Grid iten xs={2}>
                         {project.website && (
                             <Grid container direction="column"
                                 justifyContent="center"
@@ -57,13 +57,13 @@ export const ProjectCard = ({ project }) => {
                         )}
                     </Grid>
                     {hasSocialMedia &&
-                        <Grid xs={project.website ? 8 : 12}>
+                        <Grid iten xs={project.website ? 8 : 12}>
                             <Grid container direction="column"
                                 justifyContent="space-around"
                                 alignItems="center"
                                 sx={{ width: '100%' }}>
-                                <Grid xs={12}>social media</Grid>
-                                <Grid xs={12}>
+                                <Grid item xs={12}>social media</Grid>
+                                <Grid item xs={12}>
                                     {project.facebook && (
                                         <Tooltip title="Facebook">
                                             <a href={project.facebook} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>

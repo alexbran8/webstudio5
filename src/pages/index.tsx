@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Grid, Typography } from '@mui/material';
 import { ProjectCard } from '../components/ProjectCard';
 import { Logo } from '../components/Logo/Logo'
+import { Footer } from '../components/Footer/Footer'
 
 const projects = [
   {
@@ -91,33 +92,36 @@ const projects = [
 export default function Home() {
 
   return (
-    <Container>
-      <Logo
-        src="/logo_web_studio_5.svg" // Replace with your logo URL
-        alt="Company Logo"
-        maxWidth="1250px" // Maximum size of the logo
-        minWidth="250px" // Minimum size of the logo 
-      />
-<Typography
-  variant="h3"
-  align="center"
-  gutterBottom
-  sx={{
-    marginTop: "22%",
-    color: '#304945', // Use a theme color if possible
-    fontWeight: 'bold', // Optional: Emphasize text
-    letterSpacing: '0.5px', // Optional: Adjust spacing for better readability
-  }}
->
-  Web & Social Media
-</Typography>
-      <Grid container spacing={3} justifyContent="center">
-        {projects.map((project, index) => (
-          <Grid item key={index}>
-            <ProjectCard project={project} />
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+    <>
+      <Container>
+        <Logo
+          src="/logo_web_studio_5.svg" // Replace with your logo URL
+          alt="Company Logo"
+          maxWidth="1250px" // Maximum size of the logo
+          minWidth="250px" // Minimum size of the logo 
+        />
+        <Typography
+          variant="h3"
+          align="center"
+          gutterBottom
+          sx={{
+            marginTop: "22%",
+            color: '#304945', // Use a theme color if possible
+            fontWeight: 'bold', // Optional: Emphasize text
+            letterSpacing: '0.5px', // Optional: Adjust spacing for better readability
+          }}
+        >
+          Web & Social Media
+        </Typography>
+        <Grid container spacing={3} justifyContent="center" paddingBottom={5}>
+          {projects.map((project, index) => (
+            <Grid item key={index}>
+              <ProjectCard project={project} />
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+      <Footer />
+    </>
   );
 }
