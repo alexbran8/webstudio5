@@ -3,7 +3,7 @@ export const ContactForm = () => {
     return (
         <Box sx={{ marginTop: 8, padding: 4, backgroundColor: '#f9f9f9', borderRadius: 2 }}>
             <Typography variant="h4" align="center" gutterBottom>
-                Contact Us
+                Contează-ne 
             </Typography>
             <Typography variant="body1" align="center" gutterBottom>
                 Have questions or need more information? Send us a message below!

@@ -113,7 +113,20 @@ export default function Home() {
         maxWidth="1250px" // Maximum size of the logo
         minWidth="250px" // Minimum size of the logo 
       />
-      <Grid container spacing={3} justifyContent="center" sx={{marginTop: "22%"}}>
+<Typography
+  variant="h3"
+  align="center"
+  gutterBottom
+  sx={{
+    marginTop: "22%",
+    color: '#304945', // Use a theme color if possible
+    fontWeight: 'bold', // Optional: Emphasize text
+    letterSpacing: '0.5px', // Optional: Adjust spacing for better readability
+  }}
+>
+  Web & Social Media
+</Typography>
+      <Grid container spacing={3} justifyContent="center">
         {projects.map((project, index) => (
           <Grid item key={index}>
             <ProjectCard project={project} />
