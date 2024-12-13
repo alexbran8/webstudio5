@@ -89,11 +89,6 @@ const projects = [
 ];
 
 export default function Home() {
-  const [formValues, setFormValues] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
 
   return (
     <Container>
