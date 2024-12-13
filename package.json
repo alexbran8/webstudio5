@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://alexbran8.github.io/webstudio5",
   "scripts": {
+    "preinstall": "npm install --force",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
