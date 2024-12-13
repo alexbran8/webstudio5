@@ -95,16 +95,6 @@ export default function Home() {
     message: '',
   });
 
-  const handleChange = (e) => {
-    setFormValues({ ...formValues, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Message Sent!\nName: ${formValues.name}\nEmail: ${formValues.email}\nMessage: ${formValues.message}`);
-    setFormValues({ name: '', email: '', message: '' }); // Reset form
-  };
-
   return (
     <Container>
       <Logo
