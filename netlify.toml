@@ -1,3 +1,0 @@
-[build]
-  command = "yarn install --force && yarn build"
-  publish = "build"
