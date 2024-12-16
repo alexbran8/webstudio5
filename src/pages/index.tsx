@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Grid, Typography } from '@mui/material';
-import { ProjectCard } from '../components/ProjectCard';
+import { ProjectCard } from '../components/ProjectCard/ProjectCard';
 import { Logo } from '../components/Logo/Logo'
 import { Footer } from '../components/Footer/Footer'
 
@@ -105,7 +105,7 @@ export default function Home() {
           align="center"
           gutterBottom
           sx={{
-            marginTop: "22%",
+            marginTop: "200px",
             color: '#304945', // Use a theme color if possible
             fontWeight: 'bold', // Optional: Emphasize text
             letterSpacing: '0.5px', // Optional: Adjust spacing for better readability
